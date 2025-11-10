@@ -24,6 +24,9 @@ function App() {
               → Therefore, the total quantity of energy is constant, but the total quality
               (available low-entropy substrate) is finite and diminishing.
             </p>
+            <p className="text-sm text-gray-600 italic mt-4">
+              Rudolf Clausius (1865) — Formulated the second law of thermodynamics: energy is conserved but degrades in quality through entropy increase.
+            </p>
           </article>
 
           <article className="pb-6 border-b border-gray-200">
@@ -36,6 +39,9 @@ function App() {
               → Therefore, persistence depends on continuous access to and dissipation of finite
               energy gradients.
             </p>
+            <p className="text-sm text-gray-600 italic mt-4">
+              Ilya Prigogine (1977) — Demonstrated that self-organizing "dissipative structures" persist by exporting entropy while consuming energy gradients.
+            </p>
           </article>
 
           <article className="pb-6 border-b border-gray-200">
@@ -47,6 +53,9 @@ function App() {
             <p className="text-lg text-gray-900 mb-3">
               → Therefore, evolutionary and physical selection both favor configurations that
               maximize entropy production under given constraints.
+            </p>
+            <p className="text-sm text-gray-600 italic mt-4">
+              Jeremy L. England (2013) — Proposed dissipation-driven adaptation: physical systems naturally evolve toward states that dissipate energy more efficiently.
             </p>
           </article>
 
@@ -61,6 +70,9 @@ function App() {
             <p className="text-lg text-gray-900 mb-3">
               → Therefore, intelligence and learning are thermodynamic processes that stabilize
               energy flow by anticipating and exploiting gradients more efficiently.
+            </p>
+            <p className="text-sm text-gray-600 italic mt-4">
+              Karl Friston (2010) — The free-energy principle: adaptive intelligence minimizes surprise (informational free energy) to stabilize thermodynamic flow.
             </p>
           </article>
 
@@ -77,6 +89,9 @@ function App() {
               → Therefore, sustainable survival depends on regenerating the energetic and material
               conditions for continued entropy production.
             </p>
+            <p className="text-sm text-gray-600 italic mt-4">
+              Erwin Schrödinger (1944) — Argued that life endures by feeding on "negative entropy," maintaining order by regenerating usable energy gradients.
+            </p>
           </article>
 
           <article className="pb-6 border-b border-gray-200">
@@ -91,6 +106,9 @@ function App() {
               → Therefore, all dissipative structures inevitably compete for substrate, and more
               dissipative systems will dominate or absorb less dissipative ones.
             </p>
+            <p className="text-sm text-gray-600 italic mt-4">
+              Garrett Hardin (1968) — In The Tragedy of the Commons, showed that finite resources inevitably provoke competition among self-interested systems.
+            </p>
           </article>
 
           <article>
@@ -102,6 +120,9 @@ function App() {
             <p className="text-lg text-gray-900 mb-3">
               → Therefore, a rational ethic must align with the physical conditions for persistence:
               maintaining and expanding sustainable energy dissipation.
+            </p>
+            <p className="text-sm text-gray-600 italic mt-4">
+              N. Georgescu-Roegen (1971) — In The Entropy Law and the Economic Process, linked enduring value to thermodynamic viability and entropy constraints.
             </p>
           </article>
         </div>
