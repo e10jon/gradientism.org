@@ -9,7 +9,6 @@ function App() {
           and evolution.
         </p>
       </header>
-
       <section className="mb-8">
         <h2 className="text-2xl font-serif mb-8 text-gray-900">Premises</h2>
 
@@ -19,10 +18,6 @@ function App() {
             <p className="text-gray-700 leading-relaxed mb-3">
               Energy cannot be created or destroyed, only transformed; however, each transformation
               increases entropy, degrading energy's ability to perform work.
-            </p>
-            <p className="text-lg text-gray-900 mb-3">
-              → Therefore, the total quantity of energy is constant, but the total quality
-              (available low-entropy substrate) is finite and diminishing.
             </p>
             <p className="text-sm text-gray-600 italic mt-4">
               Rudolf Clausius (1865) — Formulated the second law of thermodynamics: energy is
@@ -36,10 +31,6 @@ function App() {
               All open systems that maintain structure far from equilibrium, persist only by
               consuming low-entropy energy and exporting entropy to their surroundings.
             </p>
-            <p className="text-lg text-gray-900 mb-3">
-              → Therefore, persistence depends on continuous access to and dissipation of finite
-              energy gradients.
-            </p>
             <p className="text-sm text-gray-600 italic mt-4">
               Ilya Prigogine (1977) — Demonstrated that self-organizing "dissipative structures"
               persist by exporting entropy while consuming energy gradients.
@@ -51,10 +42,6 @@ function App() {
             <p className="text-gray-700 leading-relaxed mb-3">
               Systems that capture and dissipate energy more effectively grow, replicate, and
               outcompete less dissipative systems.
-            </p>
-            <p className="text-lg text-gray-900 mb-3">
-              → Therefore, evolutionary and physical selection both favor configurations that
-              maximize entropy production under given constraints.
             </p>
             <p className="text-sm text-gray-600 italic mt-4">
               Jeremy L. England (2013) — Proposed dissipation-driven adaptation: physical systems
@@ -69,10 +56,6 @@ function App() {
             <p className="text-gray-700 leading-relaxed mb-3">
               Adaptive systems survive by minimizing informational free energy; reducing prediction
               error between internal models and external reality through Bayesian updating.
-            </p>
-            <p className="text-lg text-gray-900 mb-3">
-              → Therefore, intelligence and learning are thermodynamic processes that stabilize
-              energy flow by anticipating and exploiting gradients more efficiently.
             </p>
             <p className="text-sm text-gray-600 italic mt-4">
               Karl Friston (2010) — The free-energy principle: adaptive intelligence minimizes
@@ -89,10 +72,6 @@ function App() {
               consuming existing gradients but creating and maintaining new ones that renew the
               potential for dissipation.
             </p>
-            <p className="text-lg text-gray-900 mb-3">
-              → Therefore, sustainable survival depends on regenerating the energetic and material
-              conditions for continued entropy production.
-            </p>
             <p className="text-sm text-gray-600 italic mt-4">
               Erwin Schrödinger (1944) — Argued that life endures by feeding on "negative entropy,"
               maintaining order by regenerating usable energy gradients.
@@ -107,10 +86,6 @@ function App() {
               Since the universe contains a limited supply of low-entropy matter and energy, any
               system's growth reduces what is available to others.
             </p>
-            <p className="text-lg text-gray-900 mb-3">
-              → Therefore, all dissipative structures inevitably compete for substrate, and more
-              dissipative systems will dominate or absorb less dissipative ones.
-            </p>
             <p className="text-sm text-gray-600 italic mt-4">
               Garrett Hardin (1968) — In The Tragedy of the Commons, showed that finite resources
               inevitably provoke competition among self-interested systems.
@@ -123,10 +98,6 @@ function App() {
               All values, goals, and ethics emerge from the continued existence of the systems that
               hold them. Any ethic that undermines its own thermodynamic viability is self-negating.
             </p>
-            <p className="text-lg text-gray-900 mb-3">
-              → Therefore, a rational ethic must align with the physical conditions for persistence:
-              maintaining and expanding sustainable energy dissipation.
-            </p>
             <p className="text-sm text-gray-600 italic mt-4">
               N. Georgescu-Roegen (1971) — In The Entropy Law and the Economic Process, linked
               enduring value to thermodynamic viability and entropy constraints.
@@ -134,7 +105,6 @@ function App() {
           </article>
         </div>
       </section>
-
       <section className="mb-8 pt-8 border-t border-gray-300">
         <h2 className="text-2xl font-serif mb-6 text-gray-900">Conclusion</h2>
         <p className="mb-4 leading-relaxed text-lg text-gray-700">
@@ -148,35 +118,33 @@ function App() {
       </section>
 
       <section className="mb-8 pt-8 border-t border-gray-300">
-        <h2 className="text-2xl font-serif mb-6 text-gray-900">Implications</h2>
+        <h2 className="text-2xl font-serif mb-6 text-gray-900">Novel Implications</h2>
         <ol className="space-y-4 list-decimal list-inside pl-0">
           <li className="leading-relaxed text-lg text-gray-700">
-            <strong className="text-gray-900">AI: </strong> Provide a programming framework that
-            prevents extinction-level misalignment.
+            AI gains a universal ethical framework that prevents extinction-level misalignment.
           </li>
           <li className="leading-relaxed text-lg text-gray-700">
-            <strong className="text-gray-900">Politics:</strong> Refute repressive ideologies and
-            evaluate policies through scientific criteria.
+            Politics replaces ideology with thermodynamic realism, recognizing extremism as a
+            manageable input.
           </li>
           <li className="leading-relaxed text-lg text-gray-700">
-            <strong className="text-gray-900">Wealth:</strong> Restore purpose and direction in
-            conditions of abundance.
+            Wealth regains purpose by keeping capital circulating as a living gradient.
           </li>
           <li className="leading-relaxed text-lg text-gray-700">
-            <strong className="text-gray-900">Economy:</strong> Realign investments towards
-            non-zero-sum companies/industries.
+            Ecology shifts from conservation to active gradient renewal.
           </li>
           <li className="leading-relaxed text-lg text-gray-700">
-            <strong className="text-gray-900">Education:</strong> Reorient learning around complex
-            systems persistence.
+            Education teaches persistence as the root of meaning, and balancing systems as a
+            virtuous endeavor.
           </li>
           <li className="leading-relaxed text-lg text-gray-700">
-            <strong className="text-gray-900">Culture:</strong> Inspire narratives that celebrate
-            regeneration and intelligent progress.
+            Culture sustains curiosity and creativity even in abundance.
           </li>
           <li className="leading-relaxed text-lg text-gray-700">
-            <strong className="text-gray-900">Ethics:</strong> Ground morality in physical viability
-            rather than belief or tradition.
+            Governance values dissent and diversity as essential informational gradients.
+          </li>
+          <li className="leading-relaxed text-lg text-gray-700">
+            Ethics grounds morality in physical viability and long-term persistence.
           </li>
         </ol>
       </section>
@@ -213,7 +181,6 @@ function App() {
           </li>
         </ul>
       </section>
-
       <section className="mb-8 pt-8 border-t border-gray-300">
         <h2 className="text-2xl font-serif mb-6 text-gray-900">Contact</h2>
         Send your thoughts, positive or negative, large or small, to{" "}
@@ -222,7 +189,6 @@ function App() {
         </a>
         .
       </section>
-
       <footer className="mt-8 pt-8 border-t border-gray-300 text-center text-sm text-gray-600">
         <p>
           &copy;2025 <a href="https://ethanjon.net">Ethan Jon</a>. Licensed under{" "}
