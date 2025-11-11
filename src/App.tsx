@@ -11,7 +11,7 @@ function App() {
       </header>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-serif mb-8 text-gray-900">The Seven Premises</h2>
+        <h2 className="text-2xl font-serif mb-8 text-gray-900">Premises</h2>
 
         <div className="space-y-8">
           <article className="pb-6 border-b border-gray-200">
@@ -25,7 +25,8 @@ function App() {
               (available low-entropy substrate) is finite and diminishing.
             </p>
             <p className="text-sm text-gray-600 italic mt-4">
-              Rudolf Clausius (1865) — Formulated the second law of thermodynamics: energy is conserved but degrades in quality through entropy increase.
+              Rudolf Clausius (1865) — Formulated the second law of thermodynamics: energy is
+              conserved but degrades in quality through entropy increase.
             </p>
           </article>
 
@@ -40,7 +41,8 @@ function App() {
               energy gradients.
             </p>
             <p className="text-sm text-gray-600 italic mt-4">
-              Ilya Prigogine (1977) — Demonstrated that self-organizing "dissipative structures" persist by exporting entropy while consuming energy gradients.
+              Ilya Prigogine (1977) — Demonstrated that self-organizing "dissipative structures"
+              persist by exporting entropy while consuming energy gradients.
             </p>
           </article>
 
@@ -55,7 +57,8 @@ function App() {
               maximize entropy production under given constraints.
             </p>
             <p className="text-sm text-gray-600 italic mt-4">
-              Jeremy L. England (2013) — Proposed dissipation-driven adaptation: physical systems naturally evolve toward states that dissipate energy more efficiently.
+              Jeremy L. England (2013) — Proposed dissipation-driven adaptation: physical systems
+              naturally evolve toward states that dissipate energy more efficiently.
             </p>
           </article>
 
@@ -72,7 +75,8 @@ function App() {
               energy flow by anticipating and exploiting gradients more efficiently.
             </p>
             <p className="text-sm text-gray-600 italic mt-4">
-              Karl Friston (2010) — The free-energy principle: adaptive intelligence minimizes surprise (informational free energy) to stabilize thermodynamic flow.
+              Karl Friston (2010) — The free-energy principle: adaptive intelligence minimizes
+              surprise (informational free energy) to stabilize thermodynamic flow.
             </p>
           </article>
 
@@ -90,7 +94,8 @@ function App() {
               conditions for continued entropy production.
             </p>
             <p className="text-sm text-gray-600 italic mt-4">
-              Erwin Schrödinger (1944) — Argued that life endures by feeding on "negative entropy," maintaining order by regenerating usable energy gradients.
+              Erwin Schrödinger (1944) — Argued that life endures by feeding on "negative entropy,"
+              maintaining order by regenerating usable energy gradients.
             </p>
           </article>
 
@@ -107,7 +112,8 @@ function App() {
               dissipative systems will dominate or absorb less dissipative ones.
             </p>
             <p className="text-sm text-gray-600 italic mt-4">
-              Garrett Hardin (1968) — In The Tragedy of the Commons, showed that finite resources inevitably provoke competition among self-interested systems.
+              Garrett Hardin (1968) — In The Tragedy of the Commons, showed that finite resources
+              inevitably provoke competition among self-interested systems.
             </p>
           </article>
 
@@ -122,23 +128,57 @@ function App() {
               maintaining and expanding sustainable energy dissipation.
             </p>
             <p className="text-sm text-gray-600 italic mt-4">
-              N. Georgescu-Roegen (1971) — In The Entropy Law and the Economic Process, linked enduring value to thermodynamic viability and entropy constraints.
+              N. Georgescu-Roegen (1971) — In The Entropy Law and the Economic Process, linked
+              enduring value to thermodynamic viability and entropy constraints.
             </p>
           </article>
         </div>
       </section>
 
       <section className="mb-8 pt-8 border-t border-gray-300">
-        <h2 className="text-2xl font-serif mb-6 text-gray-900">
-          Conclusion: The Thermodynamic Ethic
-        </h2>
+        <h2 className="text-2xl font-serif mb-6 text-gray-900">Conclusion</h2>
         <p className="mb-4 leading-relaxed text-lg text-gray-700">
+          <em>The Thermodynamic Ethic: </em>
           Humanity survives by consuming limited gradients of order. To endure, it must continuously
           and intelligently expand its capacity to dissipate energy sustainably; through innovation,
           adaptation, and cooperation that creates and preserves the gradients enabling future flux.
           Failure to do so ensures extinction or absorption by systems&mdash;living or
           non-living&mdash;that better model reality and dissipate energy more effectively.
         </p>
+      </section>
+
+      <section className="mb-8 pt-8 border-t border-gray-300">
+        <h2 className="text-2xl font-serif mb-6 text-gray-900">Implications</h2>
+        <ol className="space-y-4 list-decimal list-inside pl-0">
+          <li className="leading-relaxed text-lg text-gray-700">
+            <strong className="text-gray-900">AI: </strong> Provide a programming framework that
+            prevents extinction-level misalignment.
+          </li>
+          <li className="leading-relaxed text-lg text-gray-700">
+            <strong className="text-gray-900">Politics:</strong> Refute repressive ideologies and
+            evaluate policies through scientific criteria.
+          </li>
+          <li className="leading-relaxed text-lg text-gray-700">
+            <strong className="text-gray-900">Wealth:</strong> Restore purpose and direction in
+            conditions of abundance.
+          </li>
+          <li className="leading-relaxed text-lg text-gray-700">
+            <strong className="text-gray-900">Economy:</strong> Realign investments towards
+            non-zero-sum companies/industries.
+          </li>
+          <li className="leading-relaxed text-lg text-gray-700">
+            <strong className="text-gray-900">Education:</strong> Reorient learning around complex
+            systems persistence.
+          </li>
+          <li className="leading-relaxed text-lg text-gray-700">
+            <strong className="text-gray-900">Culture:</strong> Inspire narratives that celebrate
+            regeneration and intelligent progress.
+          </li>
+          <li className="leading-relaxed text-lg text-gray-700">
+            <strong className="text-gray-900">Ethics:</strong> Ground morality in physical viability
+            rather than belief or tradition.
+          </li>
+        </ol>
       </section>
 
       <section className="mb-8 pt-8 border-t border-gray-300">
@@ -153,7 +193,7 @@ function App() {
             </ul>
           </li>
           <li className="leading-relaxed text-lg">
-            Define long-term goals/problems to solve
+            Define long and short-term goals/problems to solve
             <ul className="list-disc list-inside pl-4">
               <li className="text-base">
                 Integrate healthy systems properties into our largest socioeconomic systems
