@@ -3,7 +3,7 @@
 @layer base {
   body {
     @apply m-0 p-0 bg-white text-gray-900;
-    font-family: 'Georgia', 'Times New Roman', serif;
+    font-family: "Georgia", "Times New Roman", serif;
   }
 
   #root {
