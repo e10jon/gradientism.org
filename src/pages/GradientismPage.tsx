@@ -1,25 +1,16 @@
 import { useState, useEffect } from "react";
+import { usePageContext } from "vike-react/usePageContext";
 
-function App() {
-  // Read URL parameter to determine initial state
-  const getInitialState = () => {
-    const params = new URLSearchParams(window.location.search);
-    return params.get("version") !== "mainstream";
-  };
+export function GradientismPage() {
+  const pageContext = usePageContext();
+  const initialIsScientific = pageContext.urlParsed.search?.version !== "mainstream";
+  const [isScientific, setIsScientific] = useState(initialIsScientific);
 
-  const [isScientific, setIsScientific] = useState(getInitialState);
-
-  // Sync state with URL changes (e.g., browser back/forward)
+  // Sync state with URL changes (e.g., browser back/forward or Vike navigation)
   useEffect(() => {
-    const handlePopState = () => {
-      const params = new URLSearchParams(window.location.search);
-      const shouldBeScientific = params.get("version") !== "mainstream";
-      setIsScientific(shouldBeScientific);
-    };
-
-    window.addEventListener("popstate", handlePopState);
-    return () => window.removeEventListener("popstate", handlePopState);
-  }, []);
+    const shouldBeScientific = pageContext.urlParsed.search?.version !== "mainstream";
+    setIsScientific(shouldBeScientific);
+  }, [pageContext.urlParsed.search]);
 
   // Update URL when toggle changes
   const handleVersionChange = (scientific: boolean) => {
@@ -108,7 +99,7 @@ function App() {
   const nonScientificContent = {
     title: "Gradientism",
     description:
-      "The belief that the ultimate measure of value is humanity’s capacity to notice, create, and keep up useful differences in energy that allow life, growth, and change to continue.",
+      "The belief that the ultimate measure of value is humanity's capacity to notice, create, and keep up useful differences in energy that allow life, growth, and change to continue.",
     premises: [
       {
         title: "1. Conservation and Degradation",
@@ -305,5 +296,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

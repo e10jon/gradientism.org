@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "vike dev",
+    "build": "tsc -b && vike build",
     "lint": "biome lint .",
     "format": "biome format --write .",
     "check": "biome check . --unsafe --fix",
-    "preview": "vite preview"
+    "preview": "vike preview"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -27,6 +27,8 @@
     "puppeteer": "^24.29.1",
     "tailwindcss": "^4.1.17",
     "typescript": "~5.9.3",
+    "vike": "^0.4.246",
+    "vike-react": "^0.6.12",
     "vite": "^7.1.7"
   }
 }
