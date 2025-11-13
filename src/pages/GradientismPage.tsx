@@ -31,6 +31,7 @@ export function GradientismPage() {
     title: "Gradientism",
     description:
       "The belief that the ultimate measure of value is a system's capacity to perceive, generate, and sustain energy and information gradients that enable continued dissipation and evolution.",
+    goal: "Gradientism's goal is do what has never been done before: create a hybrid of science and religion by combining religion's aspirations and robust community-building practices with science's robust empirical epistemology.",
     premises: [
       {
         title: "1. Conservation and Degradation",
@@ -100,6 +101,7 @@ export function GradientismPage() {
     title: "Gradientism",
     description:
       "The belief that the ultimate measure of value is humanity's capacity to notice, create, and keep up useful differences in energy that allow life, growth, and change to continue.",
+    goal: "Gradientism's goal is do what has never been done before: combine science's notion that knowledge comes from observation with religion's proven community-building practices and inspirational promises of a better life after death.",
     premises: [
       {
         title: "1. Conservation and Degradation",
@@ -170,35 +172,23 @@ export function GradientismPage() {
   return (
     <div className="max-w-3xl mx-auto px-8 py-12 bg-white text-gray-900">
       <header className="mb-8 pb-8 border-b border-gray-300">
-        <h1 className="text-4xl font-serif mb-5 text-gray-900">{content.title}</h1>
-        <div className="mb-7 flex items-center gap-3">
-          <span className="text-sm text-gray-500 font-medium">Version</span>
-          <fieldset className="inline-flex rounded-lg border border-gray-300 bg-gray-50 p-1">
-            <button
-              type="button"
-              onClick={() => handleVersionChange(true)}
-              className={`px-4 py-1 text-sm font-medium cursor-pointer rounded-md transition-colors focus:outline-none ${
-                isScientific
-                  ? "bg-white text-gray-900 shadow-sm"
-                  : "text-gray-600 hover:text-gray-900"
-              }`}
-            >
-              Scientific
-            </button>
-            <button
-              type="button"
-              onClick={() => handleVersionChange(false)}
-              className={`px-4 py-1 text-sm font-medium cursor-pointer rounded-md transition-colors focus:outline-none ${
-                !isScientific
-                  ? "bg-white text-gray-900 shadow-sm"
-                  : "text-gray-600 hover:text-gray-900"
-              }`}
-            >
-              Mainstream
-            </button>
-          </fieldset>
+        <div className="mb-6 flex items-center gap-2">
+          <label htmlFor="version-select" className="text-xs text-gray-500 font-medium">
+            Version
+          </label>
+          <select
+            id="version-select"
+            value={isScientific ? "scientific" : "mainstream"}
+            onChange={(e) => handleVersionChange(e.target.value === "scientific")}
+            className="px-3 py-1 text-sm font-medium rounded-md border border-gray-300 bg-white text-gray-900 cursor-pointer focus:outline-none"
+          >
+            <option value="scientific">Scientific</option>
+            <option value="mainstream">Mainstream</option>
+          </select>
         </div>
-        <p className="text-lg text-gray-700 font-serif italic">{content.description}</p>
+        <h1 className="text-4xl font-serif mb-5 text-gray-900">{content.title}</h1>
+        <p className="text-lg text-gray-700 font-serif italic mb-5">{content.description}</p>
+        <p className="text-lg text-gray-700 font-serif">{content.goal}</p>
       </header>
       <section className="mb-8">
         <h2 className="text-2xl font-serif mb-8 text-gray-900">
