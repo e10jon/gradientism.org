@@ -28,10 +28,9 @@ export function GradientismPage() {
   };
 
   const scientificContent = {
-    title: "Gradientism",
     description:
-      "The belief that the ultimate measure of value is a system's capacity to perceive, generate, and sustain energy and information gradients that enable continued dissipation and evolution.",
-    goal: "Gradientism's goal is do what has never been done before: create a hybrid of science and religion by combining religion's aspirations and robust community-building practices with science's robust empirical epistemology.",
+      "The belief that the ultimate measure of value is a system's capacity to perceive, generate, and sustain energy gradients that enable continued dissipation and evolution.",
+    goal: "Gradientism's goal is do what has never been done before: create a hybrid of science and religion by combining religion's aspirations and robust community-building practices with science's undeniable empirical epistemology.",
     premises: [
       {
         title: "1. Conservation and Degradation",
@@ -98,7 +97,6 @@ export function GradientismPage() {
   };
 
   const nonScientificContent = {
-    title: "Gradientism",
     description:
       "The belief that the ultimate measure of value is humanity's capacity to notice, create, and keep up useful differences in energy that allow life, growth, and change to continue.",
     goal: "Gradientism's goal is do what has never been done before: combine science's notion that knowledge comes from observation with religion's proven community-building practices and inspirational promises of a better life after death.",
@@ -171,11 +169,8 @@ export function GradientismPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-8 py-12 bg-white text-gray-900">
-      <header className="mb-8 pb-8 border-b border-gray-300">
+      <header className="mb-8">
         <div className="mb-6 flex items-center gap-2">
-          <label htmlFor="version-select" className="text-xs text-gray-500 font-medium">
-            Version
-          </label>
           <select
             id="version-select"
             value={isScientific ? "scientific" : "mainstream"}
@@ -186,12 +181,25 @@ export function GradientismPage() {
             <option value="mainstream">Mainstream</option>
           </select>
         </div>
-        <h1 className="text-4xl font-serif mb-5 text-gray-900">{content.title}</h1>
+        <h1 className="text-5xl font-serif my-8 text-gray-900 font-semibold">Gradientism</h1>
         <p className="text-lg text-gray-700 font-serif italic mb-5">{content.description}</p>
         <p className="text-lg text-gray-700 font-serif">{content.goal}</p>
       </header>
+      <section className="mb-8 pb-8">
+        <div className="relative bg-linear-to-br from-blue-50 via-purple-50 to-pink-50 border-2 border-blue-200 rounded-lg p-6 shadow-lg">
+          <h2 className="text-xl font-serif mb-4 text-gray-900 pr-16">Current Status</h2>
+          <div className="space-y-4 text-gray-800 leading-relaxed">
+            <p className="text-base">
+              <span className="font-bold italic">This project is in the earliest stage.</span> We
+              are looking for anyone sympathetic to the goal of utilizing science to supply value
+              and meaning to the world, ultimately to shape culture, social, and political systems
+              in massively ambitious ways.
+            </p>
+          </div>
+        </div>
+      </section>
       <section className="mb-8">
-        <h2 className="text-2xl font-serif mb-8 text-gray-900">
+        <h2 className="text-2xl font-serif mb-8 text-gray-900 font-semibold">
           {isScientific ? "Premises" : "Scientific Truths"}
         </h2>
 
@@ -214,7 +222,7 @@ export function GradientismPage() {
         </div>
       </section>
       <section className="mb-8 pt-8 border-t border-gray-300">
-        <h2 className="text-2xl font-serif mb-6 text-gray-900">Conclusion</h2>
+        <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">Conclusion</h2>
         <p className="mb-4 leading-relaxed text-lg text-gray-700 whitespace-pre-line">
           {isScientific && <em>The Thermodynamic Ethic: </em>}
           {content.conclusion}
@@ -222,7 +230,7 @@ export function GradientismPage() {
       </section>
 
       <section className="mb-8 pt-8 border-t border-gray-300">
-        <h2 className="text-2xl font-serif mb-6 text-gray-900">
+        <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">
           {isScientific ? "Novel Implications" : "What it Means"}
         </h2>
         <ol className="space-y-4 list-decimal list-inside pl-0">
@@ -238,7 +246,7 @@ export function GradientismPage() {
       </section>
 
       <section className="mb-8 pt-8 border-t border-gray-300">
-        <h2 className="text-2xl font-serif mb-6 text-gray-900">Next Steps</h2>
+        <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">Next Steps</h2>
         <ul className="space-y-4 list-decimal list-inside pl-0">
           <li className="leading-relaxed text-lg">
             Establish a board of experts across relevant disciplines
@@ -270,7 +278,7 @@ export function GradientismPage() {
         </ul>
       </section>
       <section className="mb-8 pt-8 border-t border-gray-300">
-        <h2 className="text-2xl font-serif mb-6 text-gray-900">Contact</h2>
+        <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">Contact</h2>
         Send your thoughts, positive or negative, large or small, to{" "}
         <a href="mailto:ethan@ethanjon.net" className="text-blue-500 hover:text-blue-700">
           ethan@ethanjon.net
