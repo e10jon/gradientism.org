@@ -29,8 +29,8 @@ export function GradientismPage() {
 
   const scientificContent = {
     description:
-      "The belief that the ultimate measure of value is a system's capacity to perceive, generate, and sustain energy gradients that enable continued dissipation and evolution.",
-    goal: "Gradientism's goal is do what has never been done before: create a hybrid of science and religion by combining religion's aspirations and robust community-building practices with science's undeniable empirical epistemology.",
+      "The belief that value is measured by a system's capacity to perceive, generate, and sustain energy gradients that enable continued dissipation and evolution.",
+    goal: "To create a hybrid of science and religion by combining religion's aspirations and robust community-building practices with science's undeniable empirical epistemology.",
     premises: [
       {
         title: "1. Conservation and Degradation",
@@ -98,8 +98,8 @@ export function GradientismPage() {
 
   const nonScientificContent = {
     description:
-      "The belief that the ultimate measure of value is humanity's capacity to notice, create, and keep up useful differences in energy that allow life, growth, and change to continue.",
-    goal: "Gradientism's goal is do what has never been done before: combine science's notion that knowledge comes from observation with religion's proven community-building practices and inspirational promises of a better life after death.",
+      "The belief that value is measured by humanity's capacity to notice, create, and keep up useful differences in energy that allow life, growth, and change to continue.",
+    goal: "To combine science's notion that knowledge comes from observation with religion's proven community-building practices and inspirational promises of a better life after death.",
     premises: [
       {
         title: "1. Conservation and Degradation",
@@ -169,7 +169,7 @@ export function GradientismPage() {
 
   return (
     <div className="max-w-3xl mx-auto px-8 py-12 bg-white text-gray-900">
-      <header className="mb-8">
+      <header className="mb-5 pb-3">
         <div className="mb-6 flex items-center gap-2">
           <select
             id="version-select"
@@ -181,25 +181,56 @@ export function GradientismPage() {
             <option value="mainstream">Mainstream</option>
           </select>
         </div>
-        <h1 className="text-5xl font-serif my-8 text-gray-900 font-semibold">Gradientism</h1>
-        <p className="text-lg text-gray-700 font-serif italic mb-5">{content.description}</p>
-        <p className="text-lg text-gray-700 font-serif">{content.goal}</p>
+        <h1 className="text-5xl font-serif my-10 text-gray-900 font-semibold">Gradientism</h1>
+        <p className="text-lg text-gray-700 font-serif italic mb-5 border-l-4 border-gray-300 pl-5">
+          {content.description}
+        </p>
       </header>
-      <section className="mb-8 pb-8">
+
+      <section className="mb-5 pb-8">
         <div className="relative bg-linear-to-br from-blue-50 via-purple-50 to-pink-50 border-2 border-blue-200 rounded-lg p-6 shadow-lg">
           <h2 className="text-xl font-serif mb-4 text-gray-900 pr-16">Current Status</h2>
           <div className="space-y-4 text-gray-800 leading-relaxed">
             <p className="text-base">
               <span className="font-bold italic">This project is in the earliest stage.</span> We
-              are looking for anyone sympathetic to the goal of utilizing science to supply value
-              and meaning to the world, ultimately to shape culture, social, and political systems
-              in massively ambitious ways.
+              are looking to collaborate with anyone interested and passionate about the goal.
+              Please reach out to{" "}
+              <a href="mailto:ethan@ethanjon.net" className="text-blue-500 hover:text-blue-700">
+                ethan@ethanjon.net
+              </a>{" "}
+              if so.
             </p>
           </div>
         </div>
       </section>
+
+      <section className="mb-8 pb-8 border-b border-gray-300">
+        <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">Goal</h2>
+        <p className="text-lg text-gray-700 font-serif">{content.goal}</p>
+      </section>
+
+      <section className="mb-8 pb-8 border-b border-gray-300">
+        <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">Roadmap</h2>
+        <ol className="space-y-1 list-decimal list-inside pl-0">
+          <li className="leading-relaxed text-lg">Arrive at a defensible scientific basis</li>
+          <li className="leading-relaxed text-lg">
+            Deduce ethical principles from the scientific basis
+          </li>
+          <li className="leading-relaxed text-lg">
+            Assemble a board of experts across relevant domains
+          </li>
+          <li className="leading-relaxed text-lg">
+            Apply ethical principles to all relevant domains
+          </li>
+          <li className="leading-relaxed text-lg">Develop a curriculum for continuous learning</li>
+          <li className="leading-relaxed text-lg">
+            Establish social structures for perpetual existence
+          </li>
+        </ol>
+      </section>
+
       <section className="mb-8">
-        <h2 className="text-2xl font-serif mb-8 text-gray-900 font-semibold">
+        <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">
           {isScientific ? "Premises" : "Scientific Truths"}
         </h2>
 
@@ -224,7 +255,7 @@ export function GradientismPage() {
       <section className="mb-8 pt-8 border-t border-gray-300">
         <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">Conclusion</h2>
         <p className="mb-4 leading-relaxed text-lg text-gray-700 whitespace-pre-line">
-          {isScientific && <em>The Thermodynamic Ethic: </em>}
+          {isScientific && <em>The Thermodynamic Ethic — </em>}
           {content.conclusion}
         </p>
       </section>
@@ -246,44 +277,14 @@ export function GradientismPage() {
       </section>
 
       <section className="mb-8 pt-8 border-t border-gray-300">
-        <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">Next Steps</h2>
-        <ul className="space-y-4 list-decimal list-inside pl-0">
-          <li className="leading-relaxed text-lg">
-            Establish a board of experts across relevant disciplines
-            <ul className="list-disc list-inside pl-4">
-              <li className="text-base">
-                Physics, Chemistry, Biology, Computer Science, Social Sciences
-              </li>
-            </ul>
-          </li>
-          <li className="leading-relaxed text-lg">
-            Define long and short-term goals/problems to solve
-            <ul className="list-disc list-inside pl-4">
-              <li className="text-base">
-                Integrate healthy systems properties into our largest socioeconomic systems
-              </li>
-              <li className="text-base">
-                Combat the resurgence of religious/reactionary/nonscientific thinking
-              </li>
-              <li className="text-base">Inspire cultures of abundance to continue progressing</li>
-            </ul>
-          </li>
-          <li className="leading-relaxed text-lg">
-            Create the structures to achieve the goals
-            <ul className="list-disc list-inside pl-4">
-              <li className="text-base">Scientific institute</li>
-              <li className="text-base">Cultural/religious foundation</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section className="mb-8 pt-8 border-t border-gray-300">
         <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">Contact</h2>
-        Send your thoughts, positive or negative, large or small, to{" "}
-        <a href="mailto:ethan@ethanjon.net" className="text-blue-500 hover:text-blue-700">
-          ethan@ethanjon.net
-        </a>
-        .
+        <p className="text-lg">
+          Send your thoughts, positive or negative, large or small, to{" "}
+          <a href="mailto:ethan@ethanjon.net" className="text-blue-500 hover:text-blue-700">
+            ethan@ethanjon.net
+          </a>
+          .
+        </p>
       </section>
       <footer className="mt-8 pt-8 border-t border-gray-300 text-center text-sm text-gray-600">
         <p>
