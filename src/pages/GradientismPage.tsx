@@ -29,7 +29,7 @@ export function GradientismPage() {
 
   const scientificContent = {
     description:
-      "The belief that value is measured by a system's capacity to perceive, generate, and sustain energy gradients that enable continued dissipation and evolution.",
+      "The belief that value is intrinsically defined by a system’s own judgment of its capacity to perceive, generate, and sustain energy gradients that enable continued dissipation and evolution.",
     goal: "To create a hybrid of science and religion by combining religion's aspirations and robust community-building practices with science's undeniable empirical epistemology.",
     premises: [
       {
@@ -86,13 +86,21 @@ export function GradientismPage() {
       "Humanity survives by consuming limited gradients of order. To endure, it must continuously and intelligently expand its capacity to dissipate energy sustainably; through innovation, adaptation, and cooperation that creates and preserves the gradients enabling future flux. Failure to do so ensures extinction or absorption by other systems—living or non—that will seek our substrate to perpetuate their existence.",
     novelImplications: [
       "AI gains a universal ethical framework that prevents extinction-level misalignment.",
-      "Politics replaces ideology with thermodynamic realism, recognizing extremism as a manageable input.",
+      "Politics replaces ideology with thermodynamic realism, recognizing extremisms as merely inputs to a dynamic equilibrium.",
       "Wealth regains purpose by keeping capital circulating as a living gradient.",
       "Ecology shifts from conservation to active gradient renewal.",
       "Education teaches persistence as the root of meaning, and balancing systems as a virtuous endeavor.",
       "Culture sustains curiosity and creativity even in abundance.",
       "Governance values dissent and diversity as essential informational gradients.",
       "Ethics grounds morality in physical viability and long-term persistence.",
+    ],
+    roadmap: [
+      "Arrive at a defensible scientific basis",
+      "Deduce ethical principles from the scientific basis",
+      "Assemble a board of experts across relevant domains",
+      "Apply ethical principles to all relevant domains",
+      "Develop a curriculum for continuous learning",
+      "Establish social structures for perpetual existence",
     ],
   };
 
@@ -163,6 +171,14 @@ export function GradientismPage() {
       "Governance treats dissent and diversity as crucial sources of new information and options, not as threats to be silenced.",
       "Ethics grounds morality in what keeps humanity and the living world around it able to continue, instead of in rules that ignore reality.",
     ],
+    roadmap: [
+      "Get the science right",
+      "Figure out what it means for how we should live",
+      "Bring together experts from different fields",
+      "Apply these ideas to all areas of life and society",
+      "Create learning resources for everyone",
+      "Build communities and organizations that last",
+    ],
   };
 
   const content = isScientific ? scientificContent : nonScientificContent;
@@ -212,20 +228,11 @@ export function GradientismPage() {
       <section className="mb-8 pb-8 border-b border-gray-300">
         <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">Roadmap</h2>
         <ol className="space-y-1 list-decimal list-inside pl-0">
-          <li className="leading-relaxed text-lg">Arrive at a defensible scientific basis</li>
-          <li className="leading-relaxed text-lg">
-            Deduce ethical principles from the scientific basis
-          </li>
-          <li className="leading-relaxed text-lg">
-            Assemble a board of experts across relevant domains
-          </li>
-          <li className="leading-relaxed text-lg">
-            Apply ethical principles to all relevant domains
-          </li>
-          <li className="leading-relaxed text-lg">Develop a curriculum for continuous learning</li>
-          <li className="leading-relaxed text-lg">
-            Establish social structures for perpetual existence
-          </li>
+          {content.roadmap.map((item) => (
+            <li key={item} className="leading-relaxed text-lg">
+              {item}
+            </li>
+          ))}
         </ol>
       </section>
 
@@ -290,6 +297,12 @@ export function GradientismPage() {
         <p>
           &copy;2025 <a href="https://ethanjon.net">Ethan Jon</a>. Licensed under{" "}
           <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+        </p>
+        <p>
+          An evolution of{" "}
+          <a href="https://creordics.org" className="underline">
+            Creordics
+          </a>
         </p>
       </footer>
     </div>
