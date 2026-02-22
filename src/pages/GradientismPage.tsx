@@ -30,56 +30,98 @@ export function GradientismPage() {
   const scientificContent = {
     description:
       "The belief that value is intrinsically defined by a system’s own judgment of its capacity to perceive, generate, and sustain energy gradients that enable continued dissipation and evolution.",
-    goal: "To create a hybrid of science and religion by combining religion's aspirations and robust community-building practices with science's undeniable empirical epistemology.",
-    premises: [
+    goal: "To create a hybrid of science and religion by combining religion's aspirations, community-building practices, and results; with science's undeniable empirical epistemology.",
+    premisesHeading: "Premises",
+    tiers: [
       {
-        title: "1. Conservation and Degradation",
-        content:
-          "Energy cannot be created or destroyed, only transformed; however, each transformation increases entropy, degrading energy's ability to perform work.",
-        citation:
-          "Rudolf Clausius (1865) — Formulated the second law of thermodynamics: energy is conserved but degrades in quality through entropy increase.",
+        title: "Tier 1: Foundational Physics",
+        premises: [
+          {
+            title: "1. Conservation and Degradation",
+            content:
+              "Energy cannot be created or destroyed, only transformed; however, each transformation increases entropy, degrading energy's ability to perform work.",
+            citation:
+              "Rudolf Clausius (1865) — Formulated the second law of thermodynamics: energy is conserved but degrades in quality through entropy increase.",
+          },
+          {
+            title: "2. Finite Substrate Implies Inevitable Competition",
+            content:
+              "Since the universe contains a limited supply of low-entropy matter and energy, any system's growth reduces what is available to others.",
+            citation:
+              "Garrett Hardin (1968) — In The Tragedy of the Commons, showed that finite resources inevitably provoke competition among self-interested systems.",
+          },
+        ],
       },
       {
-        title: "2. Persistence Requires Dissipation",
-        content:
-          "All open systems that maintain structure far from equilibrium, persist only by consuming low-entropy energy and exporting entropy to their surroundings.",
-        citation:
-          'Ilya Prigogine (1977) — Demonstrated that self-organizing "dissipative structures" persist by exporting entropy while consuming energy gradients.',
+        title: "Tier 2: System Dynamics",
+        premises: [
+          {
+            title: "1. Persistence Requires Dissipation",
+            content:
+              "All open systems that maintain structure far from equilibrium, persist only by consuming low-entropy energy and exporting entropy to their surroundings.",
+            citation:
+              'Ilya Prigogine (1977) — Demonstrated that self-organizing "dissipative structures" persist by exporting entropy while consuming energy gradients.',
+          },
+          {
+            title: "2. Selection Favors Greater Dissipation",
+            content:
+              "Systems that capture and dissipate energy more effectively grow, replicate, and outcompete less dissipative systems.",
+            citation:
+              "Jeremy L. England (2013) — Proposed dissipation-driven adaptation: physical systems naturally evolve toward states that dissipate energy more efficiently.",
+          },
+        ],
       },
       {
-        title: "3. Selection Favors Greater Dissipation",
-        content:
-          "Systems that capture and dissipate energy more effectively grow, replicate, and outcompete less dissipative systems.",
-        citation:
-          "Jeremy L. England (2013) — Proposed dissipation-driven adaptation: physical systems naturally evolve toward states that dissipate energy more efficiently.",
+        title: "Tier 3: Complex Adaptations",
+        premises: [
+          {
+            title: "1. Intelligence as Predictive Dissipation",
+            content:
+              "Adaptive systems survive by minimizing informational free energy; reducing prediction error between internal models and external reality through Bayesian updating.",
+            citation:
+              "Karl Friston (2010) — The free-energy principle: adaptive intelligence minimizes surprise (informational free energy) to stabilize thermodynamic flow.",
+          },
+          {
+            title: "2. Cooperative Integration",
+            content:
+              "Distinct biological systems merge or collaborate to capture and dissipate energy gradients that neither could access alone, reducing internal friction for shared thermodynamic gain. From single cells merging (endosymbiosis) to human tribes, cooperation achieves economies of scale in energy capture.",
+            citation:
+              "Lynn Margulis (1967) — Demonstrated through endosymbiotic theory that complex life evolved not just through competition, but through the cooperative merging of simpler organisms to share metabolic functions.",
+          },
+          {
+            title: "3. Exosomatic Evolution",
+            content:
+              "The development of non-biological tools and machines that allow a system to outsource and radically scale its capacity to capture, store, and dissipate energy. A human body can only process about 100 watts of energy biologically. Technology allows us to harness thousands of times that amount by using external substrates (fire, fossil fuels, solar, fission).",
+            citation:
+              'Alfred J. Lotka (1945) — Proposed the law of maximum energy flux, noting that human evolution shifted from biological mutations to "exosomatic" (outside-the-body) tools to maximize energy capture.',
+          },
+          {
+            title: "4. Cultural Information Transmission",
+            content:
+              "The use of language, myth, and culture to compress, store, and transmit low-entropy survival information across generations, allowing millions of individual agents to act as a single, synchronized dissipative structure. DNA takes thousands of years to adapt to new environments; culture allows a society to adapt its gradient-capture strategies in a single generation.",
+            citation:
+              "Joseph Henrich (2015) — In The Secret of Our Success, details how cumulative cultural evolution allows humans to adapt collectively in ways no individual intelligence could achieve.",
+          },
+          {
+            title: "5. Sustainability as Gradient Regeneration",
+            content:
+              "Because the low-entropy substrate is finite, long-term persistence requires not only consuming existing gradients but creating and maintaining new ones that renew the potential for dissipation.",
+            citation:
+              'Erwin Schrödinger (1944) — Argued that life endures by feeding on "negative entropy," maintaining order by regenerating usable energy gradients.',
+          },
+        ],
       },
       {
-        title: "4. Intelligence as Predictive Dissipation",
-        content:
-          "Adaptive systems survive by minimizing informational free energy; reducing prediction error between internal models and external reality through Bayesian updating.",
-        citation:
-          "Karl Friston (2010) — The free-energy principle: adaptive intelligence minimizes surprise (informational free energy) to stabilize thermodynamic flow.",
-      },
-      {
-        title: "5. Sustainability as Gradient Regeneration",
-        content:
-          "Because the low-entropy substrate is finite, long-term persistence requires not only consuming existing gradients but creating and maintaining new ones that renew the potential for dissipation.",
-        citation:
-          'Erwin Schrödinger (1944) — Argued that life endures by feeding on "negative entropy," maintaining order by regenerating usable energy gradients.',
-      },
-      {
-        title: "6. Finite Substrate Implies Inevitable Competition",
-        content:
-          "Since the universe contains a limited supply of low-entropy matter and energy, any system's growth reduces what is available to others.",
-        citation:
-          "Garrett Hardin (1968) — In The Tragedy of the Commons, showed that finite resources inevitably provoke competition among self-interested systems.",
-      },
-      {
-        title: "7. Value as Persistence",
-        content:
-          "All values, goals, and ethics emerge from the continued existence of the systems that hold them. Any ethic that undermines its own thermodynamic viability is self-negating.",
-        citation:
-          "N. Georgescu-Roegen (1971) — In The Entropy Law and the Economic Process, linked enduring value to thermodynamic viability and entropy constraints.",
+        title: "Tier 4: Philosophical Conclusion",
+        premises: [
+          {
+            title: "1. Value as Persistence",
+            content:
+              "All values, goals, and ethics emerge from the continued existence of the systems that hold them. Any ethic that undermines its own thermodynamic viability is self-negating.",
+            citation:
+              "N. Georgescu-Roegen (1971) — In The Entropy Law and the Economic Process, linked enduring value to thermodynamic viability and entropy constraints.",
+          },
+        ],
       },
     ],
     conclusion:
@@ -94,69 +136,103 @@ export function GradientismPage() {
       "Governance values dissent and diversity as essential informational gradients.",
       "Ethics grounds morality in physical viability and long-term persistence.",
     ],
-    roadmap: [
-      "Arrive at a defensible scientific basis",
-      "Deduce ethical principles from the scientific basis",
-      "Assemble a board of experts across relevant domains",
-      "Apply ethical principles to all relevant domains",
-      "Develop a curriculum for continuous learning",
-      "Establish social structures for perpetual existence",
-    ],
   };
 
   const nonScientificContent = {
     description:
       "The belief that value is measured by humanity's capacity to notice, create, and keep up useful differences in energy that allow life, growth, and change to continue.",
     goal: "To combine science's notion that knowledge comes from observation with religion's proven community-building practices and inspirational promises of a better life after death.",
-    premises: [
+    premisesHeading: "Scientific Truths",
+    tiers: [
       {
-        title: "1. Conservation and Degradation",
-        content:
-          "Energy cannot be created or destroyed, only transformed; however, each transformation reduces energy's ability to do useful work.",
-        examples:
-          "A battery loses its charge even sitting unused. Gasoline degrades in the tank. Your phone holds less charge each year.",
+        title: "Tier 1: The Basic Rules",
+        premises: [
+          {
+            title: "1. Conservation and Degradation",
+            content:
+              "Energy cannot be created or destroyed, only transformed; however, each transformation reduces energy's ability to do useful work.",
+            examples:
+              "A battery loses its charge even sitting unused. Gasoline degrades in the tank. Your phone holds less charge each year.",
+          },
+          {
+            title: "2. Finite Resources Imply Inevitable Competition",
+            content:
+              "Since the universe contains a limited supply of usable energy, any organism or society's growth reduces what is available to others.",
+            examples:
+              "Rush hour traffic—everyone wants the same road space. Black Friday sales—limited items, many buyers. Water shortages when too many people tap the same aquifer.",
+          },
+        ],
       },
       {
-        title: "2. Persistence Requires Flow",
-        content:
-          "All living things maintain themselves by constantly consuming usable energy and exporting disorder to their surroundings.",
-        examples:
-          "Your body temperature stays constant only by burning calories. A candle flame exists only while consuming wax. A whirlpool persists only while water flows through it.",
+        title: "Tier 2: How Things Must Work",
+        premises: [
+          {
+            title: "1. Persistence Requires Flow",
+            content:
+              "All living things maintain themselves by constantly consuming usable energy and exporting disorder to their surroundings.",
+            examples:
+              "Your body temperature stays constant only by burning calories. A candle flame exists only while consuming wax. A whirlpool persists only while water flows through it.",
+          },
+          {
+            title: "2. Selection Favors Greater Flow",
+            content:
+              "Organisms and societies that capture and use energy more effectively grow, reproduce, and outcompete less efficient ones.",
+            examples:
+              "Weeds that grow faster take over gardens. Companies that scale faster dominate markets. Animals that find food more efficiently survive longer.",
+          },
+        ],
       },
       {
-        title: "3. Selection Favors Greater Flow",
-        content:
-          "Organisms and societies that capture and use energy more effectively grow, reproduce, and outcompete less efficient ones.",
-        examples:
-          "Weeds that grow faster take over gardens. Companies that scale faster dominate markets. Animals that find food more efficiently survive longer.",
+        title: "Tier 3: Clever Survival Strategies",
+        premises: [
+          {
+            title: "1. Intelligence as Predictive Adaptation",
+            content:
+              "Organisms and societies survive by building better internal models of reality, constantly updating predictions to minimize surprise and maintain stable energy flow.",
+            examples:
+              "A child learns the stove is hot and avoids it. Your brain predicts where a ball will land before you catch it. Successful businesses anticipate customer needs before they're expressed.",
+          },
+          {
+            title: "2. Cooperative Integration",
+            content:
+              "Distinct living things join forces to capture and use energy that neither could access alone, reducing wasted effort for shared gain. From the ancient merging of simple cells into complex life, to human tribes pooling labor, cooperation achieves more with less.",
+            examples:
+              "Bacteria living inside our cells power every move we make. Wolves hunt in packs to take down prey no individual could. Businesses form partnerships and supply chains to deliver products no single company could build alone.",
+          },
+          {
+            title: "3. Exosomatic Evolution",
+            content:
+              "The development of tools and machines that allow us to outsource and massively scale our ability to capture and use energy beyond what our bodies alone can do. A human body runs on about 100 watts—the power of a light bulb. Technology lets us harness thousands of times more.",
+            examples:
+              "Fire let early humans cook food, unlocking more calories. Cars move us using the energy in fuel instead of our muscles. Solar panels harvest sunlight we could never absorb through our skin.",
+          },
+          {
+            title: "4. Cultural Information Transmission",
+            content:
+              "The use of language, stories, and culture to compress, store, and pass survival knowledge across generations, allowing millions of people to act together as one coordinated unit. DNA takes thousands of years to adapt; culture lets a society change its strategies in a single generation.",
+            examples:
+              "Recipes pass cooking techniques across centuries. Written laws coordinate millions of strangers in a single society. A YouTube tutorial teaches skills that once took years of apprenticeship.",
+          },
+          {
+            title: "5. Sustainability as Renewal",
+            content:
+              "Because usable energy is finite, long-term survival requires not only consuming existing resources but actively creating and maintaining new sources of potential.",
+            examples:
+              "Farmers rotate crops to renew soil fertility. Your body rebuilds muscle after exercise. Forests regenerate after controlled burns, creating new growth potential.",
+          },
+        ],
       },
       {
-        title: "4. Intelligence as Predictive Adaptation",
-        content:
-          "Organisms and societies survive by building better internal models of reality, constantly updating predictions to minimize surprise and maintain stable energy flow.",
-        examples:
-          "A child learns the stove is hot and avoids it. Your brain predicts where a ball will land before you catch it. Successful businesses anticipate customer needs before they're expressed.",
-      },
-      {
-        title: "5. Sustainability as Renewal",
-        content:
-          "Because usable energy is finite, long-term survival requires not only consuming existing resources but actively creating and maintaining new sources of potential.",
-        examples:
-          "Farmers rotate crops to renew soil fertility. Your body rebuilds muscle after exercise. Forests regenerate after controlled burns, creating new growth potential.",
-      },
-      {
-        title: "6. Finite Resources Imply Inevitable Competition",
-        content:
-          "Since the universe contains a limited supply of usable energy, any organism or society's growth reduces what is available to others.",
-        examples:
-          "Rush hour traffic—everyone wants the same road space. Black Friday sales—limited items, many buyers. Water shortages when too many people tap the same aquifer.",
-      },
-      {
-        title: "7. Value as Persistence",
-        content:
-          "All values, goals, and ethics emerge from the continued existence of the systems that hold them. Any ethic that undermines its own survival is self-negating.",
-        examples:
-          "You value food because without it you die. Cultures that abandon survival basics disappear. Companies that ignore profitability eventually collapse.",
+        title: "Tier 4: What It All Means",
+        premises: [
+          {
+            title: "1. Value as Persistence",
+            content:
+              "All values, goals, and ethics emerge from the continued existence of the systems that hold them. Any ethic that undermines its own survival is self-negating.",
+            examples:
+              "You value food because without it you die. Cultures that abandon survival basics disappear. Companies that ignore profitability eventually collapse.",
+          },
+        ],
       },
     ],
     conclusion:
@@ -170,14 +246,6 @@ export function GradientismPage() {
       "Culture works to keep curiosity and creativity alive even when basic needs are met, so comfort doesn't turn into boredom and decay.",
       "Governance treats dissent and diversity as crucial sources of new information and options, not as threats to be silenced.",
       "Ethics grounds morality in what keeps humanity and the living world around it able to continue, instead of in rules that ignore reality.",
-    ],
-    roadmap: [
-      "Get the science right",
-      "Figure out what it means for how we should live",
-      "Bring together experts from different fields",
-      "Apply these ideas to all areas of life and society",
-      "Create learning resources for everyone",
-      "Build communities and organizations that last",
     ],
   };
 
@@ -225,37 +293,40 @@ export function GradientismPage() {
         <p className="text-lg text-gray-700 font-serif">{content.goal}</p>
       </section>
 
-      <section className="mb-8 pb-8 border-b border-gray-300">
-        <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">Roadmap</h2>
-        <ol className="space-y-1 list-decimal list-inside pl-0">
-          {content.roadmap.map((item) => (
-            <li key={item} className="leading-relaxed text-lg">
-              {item}
-            </li>
-          ))}
-        </ol>
-      </section>
-
       <section className="mb-8">
-        <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">
-          {isScientific ? "Premises" : "Scientific Truths"}
+        <h2 className="text-2xl font-serif mb-4 text-gray-900 font-semibold">
+          {content.premisesHeading}
         </h2>
 
-        <div className="space-y-8">
-          {content.premises.map((premise, index) => (
-            <article
-              key={premise.title}
-              className={index < content.premises.length - 1 ? "pb-6 border-b border-gray-200" : ""}
+        <div className="space-y-10">
+          {content.tiers.map((tier, tierIndex) => (
+            <div
+              key={tier.title}
+              className={
+                tierIndex < content.tiers.length - 1 ? "pb-10 border-b border-gray-300" : ""
+              }
             >
-              <h3 className="text-xl mb-3 text-gray-900">{premise.title}</h3>
-              <p className="text-gray-700 leading-relaxed mb-3">{premise.content}</p>
-              {isScientific && "citation" in premise && premise.citation && (
-                <p className="text-sm text-gray-600 italic mt-4">{premise.citation}</p>
-              )}
-              {!isScientific && "examples" in premise && premise.examples && (
-                <p className="text-sm text-gray-600 italic mt-4">{premise.examples}</p>
-              )}
-            </article>
+              <h3 className="text-xl font-serif mb-6 text-gray-900 font-semibold">{tier.title}</h3>
+              <div className="space-y-8">
+                {tier.premises.map((premise, index) => (
+                  <article
+                    key={premise.title}
+                    className={
+                      index < tier.premises.length - 1 ? "pb-6 border-b border-gray-200" : ""
+                    }
+                  >
+                    <h4 className="text-lg mb-3 text-gray-900">{premise.title}</h4>
+                    <p className="text-gray-700 leading-relaxed mb-3">{premise.content}</p>
+                    {isScientific && "citation" in premise && premise.citation && (
+                      <p className="text-sm text-gray-600 italic mt-4">{premise.citation}</p>
+                    )}
+                    {!isScientific && "examples" in premise && premise.examples && (
+                      <p className="text-sm text-gray-600 italic mt-4">{premise.examples}</p>
+                    )}
+                  </article>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </section>
@@ -269,7 +340,7 @@ export function GradientismPage() {
 
       <section className="mb-8 pt-8 border-t border-gray-300">
         <h2 className="text-2xl font-serif mb-6 text-gray-900 font-semibold">
-          {isScientific ? "Novel Implications" : "What it Means"}
+          {isScientific ? "Implications" : "What it Means"}
         </h2>
         <ol className="space-y-4 list-decimal list-inside pl-0">
           {content.novelImplications.map((implication) => (
